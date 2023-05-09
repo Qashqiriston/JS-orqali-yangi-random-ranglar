@@ -14,21 +14,22 @@ body {
   gap: 30px;
 }
 
-.box {
+.box,.box2, .box3, .box4 {
   width: 500px;
   height: 500px;
+  border-radius: 15%;
   box-shadow: 2px 2px 20px #ccc;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: rgb(72, 65, 65);
   font-size: 24px;
 }
 .btn {
   padding: 10px;
-  background-color: rgb(95, 95, 224);
-  color: white;
-  border: none;
+  background-color: rgb(224, 73, 129);
+  color: wheat;
+  border: 2px solid red;
   border-radius: 5px;
   cursor: pointer;
 }

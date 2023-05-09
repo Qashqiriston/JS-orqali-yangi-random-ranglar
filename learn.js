@@ -10,7 +10,6 @@
 // arrowF(myNumber);
 // n sonni + bolsa 3ga kupaytiradigan -bulsa 2 ga buladigan dastur
 
-
 // const myNumber = +prompt ("ulcham kiriting")
 // const currentM = 100;
 // const currentDM = 10;
@@ -25,7 +24,7 @@
 // const myWith = +prompt('vaznni kiriting')
 // const myTonna = 1000;
 // const mySenter = 100;
- 
+
 // const arrowF = (value) => {
 //   const hisobla = alert(`${value / myTonna}t , ${value / mySenter}snt`)
 //   return hisobla
@@ -61,37 +60,38 @@
 // const bill = function (narx , soliqlar){
 //   let total = 0
 // for (let i = 0; i < narx.length; i++){
-//   total += narx[i] + narx[i] * soliqlar 
+//   total += narx[i] + narx[i] * soliqlar
 // }
 // return total
 // }
 
-const bill = (narx , soliqlar) => {let total = 0 
-for(let i = 0; i < narx.length; i++){
-  total += narx[i] + narx[i] * soliqlar
-}
-return total
-}
+const bill = (narx, soliqlar) => {
+  let total = 0;
+  for (let i = 0; i < narx.length; i++) {
+    total += narx[i] + narx[i] * soliqlar;
+  }
+  return total;
+};
 
-const umumiy = bill([123, 23 ,34], 0.2 )
-console.log(umumiy)
+const umumiy = bill([123, 23, 34], 0.2);
+console.log(umumiy);
 // maxsulotni 20% soliqini topadigan formulla
 
 // <----------------------------------------------->
 
-function age (age, name){
-  let hisob = 2023 - age
-  console.log(`${name} siz ${age} yoshga kirdiz`)
-  return age
+function age(age, name) {
+  let hisob = 2023 - age;
+  console.log(`${name} siz ${age} yoshga kirdiz`);
+  return age;
 }
-const hisob = age(2004, "akobir")
+const hisob = age(2004, "akobir");
 
 // <----------------------------------------------------->
 
 const c = 15;
 const d = 2;
 let natija = c + d;
-console.log(natija)
+console.log(natija);
 
 // <--------------------------------------------------------->
 
@@ -122,21 +122,76 @@ console.log(natija)
 //   colorPar.style.backgroundColor = color1;
 // });
 
-
-const createColor = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f"]
-const btn = document.querySelector('.btn')
-const elBox = document.querySelector('.box')
-let color = '#'
+const createColor = [
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "6",
+  "7",
+  "8",
+  "9",
+  "a",
+  "b",
+  "c",
+  "d",
+  "e",
+  "f",
+];
+const btn = document.querySelector(".btn");
+const elBox = document.querySelector(".box");
+const elBox2 = document.querySelector(".box2");
+const elBox3 = document.querySelector(".box3");
+const elBox4 = document.querySelector(".box4");
+let color = "#";
 
 function colorFnc() {
-    for(let i = 0; i < 6; i++) {
-        let num = Math.floor(Math.random() * createColor.length)
-        color += createColor[num]
-    }
-    elBox.style.backgroundColor = color
-    elBox.textContent = color
-    color = '#'
-    return 0
+  for (let i = 0; i < 6; i++) {
+    let num = Math.floor(Math.random() * createColor.length);
+    color += createColor[num];
+  }
+  elBox.style.backgroundColor = color;
+  elBox.textContent = color;
+  color = "#";
+  return 0;
 }
 
-btn.addEventListener('click', colorFnc)
+function colorFnc2() {
+  for (let i = 0; i < 6; i++) {
+    let num = Math.floor(Math.random() * createColor.length);
+    color += createColor[num];
+  }
+  elBox2.style.backgroundColor = color;
+  elBox2.textContent = color;
+  color = "#";
+  return 0;
+}
+
+function colorFnc3() {
+  for (let i = 0; i < 6; i++) {
+    let num = Math.floor(Math.random() * createColor.length);
+    color += createColor[num];
+  }
+  elBox3.style.backgroundColor = color;
+  elBox3.textContent = color;
+  color = "#";
+  return 0;
+}
+
+function colorFnc4() {
+  for (let i = 0; i < 6; i++) {
+    let num = Math.floor(Math.random() * createColor.length);
+    color += createColor[num];
+  }
+  elBox4.style.backgroundColor = color;
+  elBox4.textContent = color;
+  color = "#";
+  return 0;
+}
+
+btn.addEventListener("click", colorFnc);
+btn.addEventListener("click", colorFnc2);
+btn.addEventListener("click", colorFnc3);
+btn.addEventListener("click", colorFnc4);
